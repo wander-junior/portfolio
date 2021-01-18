@@ -1,5 +1,6 @@
 import Title from "./components/Title";
 import Menu from "./components/Menu";
+import Abilities from "./components/Abilities";
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Menu />
       <Title />
+      <Abilities />
     </div>
   );
 }
