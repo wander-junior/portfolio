@@ -1,6 +1,7 @@
 import Title from "./components/Title";
 import Menu from "./components/Menu";
 import Abilities from "./components/Abilities";
+import Portfolio from "./components/Portfolio";
 
 const theme = {
   colors: {
@@ -17,6 +18,7 @@ function App() {
       <Menu theme={theme}/>
       <Title theme={theme}/>
       <Abilities theme={theme}/>
+      <Portfolio theme={theme}/>
     </div>
   );
 }
