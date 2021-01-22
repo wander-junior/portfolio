@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Menu theme={theme}/>
-      <Title />
+      <Title theme={theme}/>
       <Abilities />
     </div>
   );
