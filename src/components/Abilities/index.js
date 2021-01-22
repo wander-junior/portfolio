@@ -2,10 +2,16 @@ import React from 'react'
 import frontEndIcon from '../../assets/img/frontend.svg';
 import backEndIcon from '../../assets/img/backend.svg';
 import uiuxIcon from '../../assets/img/ui.svg';
+import styled from 'styled-components';
 
-export default function Abilities() {
+export default function Abilities({theme}) {
+    const AbilitiesWrapper = styled.div`
+        background: ${theme.colors.primary};
+        color: ${theme.colors.tertiary};
+    `;
+
     return (
-        <div>
+        <AbilitiesWrapper>
             <h1>Serviços</h1>
             <ul>
                 <li>
@@ -25,6 +31,6 @@ export default function Abilities() {
                 </li>
             </ul>
             <button>Saiba mais</button>
-        </div>
+        </AbilitiesWrapper>
     )
 }

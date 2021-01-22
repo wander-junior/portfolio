@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Menu theme={theme}/>
       <Title theme={theme}/>
-      <Abilities />
+      <Abilities theme={theme}/>
     </div>
   );
 }
