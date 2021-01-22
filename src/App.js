@@ -14,7 +14,7 @@ const theme = {
 function App() {
   return (
     <div className="App">
-      <Menu/>
+      <Menu theme={theme}/>
       <Title />
       <Abilities />
     </div>
