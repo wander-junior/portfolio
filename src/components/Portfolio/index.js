@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function Portfolio({theme}) {
     const PortfolioWrapper = styled.div`
         background: ${theme.colors.tertiary};
-        color: ${theme.colors.primary};
+        color: ${theme.colors.quartenary};
     `;
 
     return (
