@@ -10,7 +10,11 @@ const theme = {
     secondary: '#5B21CD',
     tertiary: '#FEFDFE',
     quartenary: '#211D2F'
-  }
+  },
+  containerConfigs: `
+    max-width: 1170px;
+    margin: 0 auto;
+  `
 }
 
 function App() {
