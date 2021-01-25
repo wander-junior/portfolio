@@ -1,20 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
+import styles from '../../styles.js';
 
-export default function Menu({theme}) {
+export default function Menu() {
     
     const MenuWrapper = styled.nav`
-        background: ${theme.colors.primary};
+        background: ${styles.theme.colors.primary};
 
     `;
     
     const Menu = styled.ul`
         display: flex;
-        ${theme.containerConfigs}
+        ${styles.theme.containerConfigs}
     `;
 
     const MenuItem = styled.li`
-        color: ${theme.colors.tertiary};
+        color: ${styles.theme.colors.tertiary};
         margin-right: 30px;
         padding-top: 40px;
         padding-bottom: 40px;

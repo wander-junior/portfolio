@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import styles from '../../styles.js';
 
-
-export default function Title({theme}) {
+export default function Title() {
     
     const TitleWrapper = styled.div`
-        background: ${theme.colors.tertiary};
-        color: ${theme.colors.quartenary};
+        background: ${styles.theme.colors.tertiary};
+        color: ${styles.theme.colors.quartenary};
     `;
     
     return (
