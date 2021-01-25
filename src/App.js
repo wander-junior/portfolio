@@ -14,7 +14,12 @@ const theme = {
   containerConfigs: `
     max-width: 1170px;
     margin: 0 auto;
-  `
+  `,
+  typoSizes: {
+    small: '18px',
+    medium: '24px',
+    big: '36px',
+  }
 }
 
 function App() {
