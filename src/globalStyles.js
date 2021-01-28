@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+import { typoSizes } from './styles';
 
 const GlobalStyle = createGlobalStyle`
+    /* CSS Reset */
+
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -45,10 +48,14 @@ const GlobalStyle = createGlobalStyle`
         border-spacing: 0;
     }
 
-    /* Font Family */
+    /* General Style */
 
     body {
         font-family: 'Roboto';
+    }
+
+    h1 {
+        font-size: ${typoSizes.big};
     }
 `
 

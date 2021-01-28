@@ -18,4 +18,14 @@ const styles = {
     }
 }
 
+const colors = styles.theme.colors;
+const containerConfigs = styles.theme.containerConfigs;
+const typoSizes = styles.theme.typoSizes;
+
+export {
+    colors,
+    containerConfigs,
+    typoSizes
+};
+
 export default styles;
