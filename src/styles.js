@@ -11,9 +11,9 @@ const styles = {
             margin: 0 auto;
         `,
         typoSizes: {
-            small: '18px',
-            medium: '24px',
-            big: '36px',
+            small: '1.125em',
+            medium: '1.5em',
+            big: '2.25em',
         }
     }
 }
