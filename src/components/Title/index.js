@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TitleWrapper } from './Title-styles';
+import { TitleWrapper } from './title-styles';
 
 export default function Title() {
     return (
