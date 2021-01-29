@@ -18,11 +18,13 @@ const styles = {
     }
 }
 
+const theme = styles.theme;
 const colors = styles.theme.colors;
 const containerConfigs = styles.theme.containerConfigs;
 const typoSizes = styles.theme.typoSizes;
 
 export {
+    theme,
     colors,
     containerConfigs,
     typoSizes
