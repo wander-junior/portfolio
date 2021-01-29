@@ -1,11 +1,21 @@
 import styled from 'styled-components';
-import { theme } from '../../styles';
+import { colors, containerConfigs } from '../../styles';
 
 const TitleWrapper = styled.div`
-    background: ${theme.colors.tertiary};
-    color: ${theme.colors.quartenary};
+    ${containerConfigs}
+    background: ${colors.tertiary};
+    color: ${colors.quartenary};
+`;
+
+const IntroTitle = styled.h1`
+    margin-top: 80px;
+    max-width: 550px;
+    ::after {
+        background: ${colors.quartenary};
+    }
 `;
 
 export {
-    TitleWrapper
+    TitleWrapper,
+    IntroTitle
 }

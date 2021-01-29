@@ -13,7 +13,7 @@ const styles = {
         typoSizes: {
             small: '1.125em',
             medium: '1.5em',
-            big: '2.25em',
+            large: '2.25em',
         }
     }
 }

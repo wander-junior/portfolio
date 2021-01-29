@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { typoSizes } from './styles';
+import { typoSizes, colors } from './styles';
 
 const GlobalStyle = createGlobalStyle`
     /* CSS Reset */
@@ -55,7 +55,17 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: ${typoSizes.big};
+        font-size: ${typoSizes.large};
+        margin: 0 auto;
+        text-align: center;
+        ::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: ${colors.tertiary};
+            margin: 20px auto 20px auto;
+        }    
     }
 `
 
