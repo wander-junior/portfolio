@@ -5,7 +5,7 @@ import backEndIcon from '../../assets/img/backend.svg';
 import uiuxIcon from '../../assets/img/ui.svg';
 
 import { Container } from '../../styles';
-import { AbilitiesWrapper, Title } from './abilities-styles';
+import { AbilitiesWrapper, Title, List } from './abilities-styles';
 
 export default function Abilities() {
 
@@ -13,7 +13,7 @@ export default function Abilities() {
         <AbilitiesWrapper>
             <Container>
                 <Title>Serviços</Title>
-                <ul>
+                <List>
                     <li>
                         <img src={frontEndIcon} alt={"Ícone Front End"}/>
                         <h2>Front End</h2>
@@ -29,7 +29,7 @@ export default function Abilities() {
                         <h2>UI/UX Design</h2>
                         <p>Eu crio interfaces intuitivas e bonitas para o seu site</p>
                     </li>
-                </ul>
+                </List>
                 <button>Saiba mais</button>
             </Container>
         </AbilitiesWrapper>

@@ -10,4 +10,9 @@ const Title = styled.h1`
     padding-top: 60px;
 `;
 
-export {AbilitiesWrapper, Title};
+const List = styled.ul`
+    display: flex;
+`;
+
+
+export {AbilitiesWrapper, Title, List};
