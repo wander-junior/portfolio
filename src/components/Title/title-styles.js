@@ -5,6 +5,11 @@ const TitleWrapper = styled.div`
     ${containerConfigs}
     background: ${colors.tertiary};
     color: ${colors.quartenary};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
 `;
 
 const IntroTitle = styled.h1`
@@ -15,8 +20,9 @@ const IntroTitle = styled.h1`
     }
 `;
 
-const CallToAction = styled.h1`
+const CallToAction = styled.p`
     font-size: ${typoSizes.medium};
+    padding-bottom: 40px;
     margin: 0 auto;
 `;
 
