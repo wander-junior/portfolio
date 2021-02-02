@@ -5,7 +5,6 @@ const TitleWrapper = styled.div`
     ${containerConfigs}
     background: ${colors.tertiary};
     color: ${colors.quartenary};
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

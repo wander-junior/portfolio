@@ -6,7 +6,6 @@ const MenuWrapper = styled.nav`
 `;
 
 const MenuUl = styled.ul`
-    display: flex;
     ${styles.theme.containerConfigs}
 `;
 

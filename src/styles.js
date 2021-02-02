@@ -7,6 +7,7 @@ const styles = {
             quartenary: '#211D2F'
         },
         containerConfigs: `
+            display: flex;
             max-width: 1170px;
             margin: 0 auto;
         `,
