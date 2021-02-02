@@ -6,4 +6,8 @@ const AbilitiesWrapper = styled.div`
     color: ${styles.theme.colors.tertiary};
 `;
 
-export {AbilitiesWrapper}
+const Title = styled.h1`
+    padding-top: 60px;
+`;
+
+export {AbilitiesWrapper, Title};

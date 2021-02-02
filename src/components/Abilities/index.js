@@ -2,13 +2,13 @@ import React from 'react'
 import frontEndIcon from '../../assets/img/frontend.svg';
 import backEndIcon from '../../assets/img/backend.svg';
 import uiuxIcon from '../../assets/img/ui.svg';
-import {AbilitiesWrapper} from './abilities-styles';
+import { AbilitiesWrapper, Title } from './abilities-styles';
 
 export default function Abilities() {
 
     return (
         <AbilitiesWrapper>
-            <h1>Serviços</h1>
+            <Title>Serviços</Title>
             <ul>
                 <li>
                     <img src={frontEndIcon} alt={"Ícone Front End"}/>
