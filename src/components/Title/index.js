@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { TitleWrapper, IntroTitle, CallToAction, Container } from './title-styles';
-import {colors} from './../../styles';
+import { TitleWrapper, IntroTitle, CallToAction } from './title-styles';
+import { colors, Container } from './../../styles';
 import Button from '../Button';
 
 export default function Title() {

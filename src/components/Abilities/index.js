@@ -1,8 +1,11 @@
 import React from 'react'
+
 import frontEndIcon from '../../assets/img/frontend.svg';
 import backEndIcon from '../../assets/img/backend.svg';
 import uiuxIcon from '../../assets/img/ui.svg';
-import { AbilitiesWrapper, Title, Container } from './abilities-styles';
+
+import { Container } from '../../styles';
+import { AbilitiesWrapper, Title } from './abilities-styles';
 
 export default function Abilities() {
 

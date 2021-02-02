@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, containerConfigs, typoSizes } from '../../styles';
+import { colors, typoSizes } from '../../styles';
 
 const TitleWrapper = styled.div`
     background: ${colors.tertiary};
@@ -20,17 +20,9 @@ const CallToAction = styled.p`
     margin: 0 auto;
 `;
 
-const Container = styled.div`
-    ${containerConfigs}
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 60px;
-`;
 
 export {
     TitleWrapper,
     IntroTitle,
     CallToAction, 
-    Container
 }

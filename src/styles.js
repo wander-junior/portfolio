@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 const styles = {
     theme: {
         colors: {
@@ -15,9 +17,17 @@ const styles = {
             small: '1.125em',
             medium: '1.5em',
             large: '2.25em',
-        }
+        },
     }
 }
+
+const Container = styled.div`
+    ${styles.theme.containerConfigs}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+`;
 
 const theme = styles.theme;
 const colors = styles.theme.colors;
@@ -28,7 +38,8 @@ export {
     theme,
     colors,
     containerConfigs,
-    typoSizes
+    typoSizes,
+    Container
 };
 
 export default styles;

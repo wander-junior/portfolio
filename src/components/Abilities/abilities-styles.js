@@ -1,4 +1,4 @@
-import { colors, containerConfigs } from '../../styles.js';
+import { colors } from '../../styles.js';
 import styled from 'styled-components';
 
 const AbilitiesWrapper = styled.div`
@@ -10,8 +10,4 @@ const Title = styled.h1`
     padding-top: 60px;
 `;
 
-const Container = styled.div`
-    ${containerConfigs};
-`;
-
-export {AbilitiesWrapper, Title, Container};
+export {AbilitiesWrapper, Title};
