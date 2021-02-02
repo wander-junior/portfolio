@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, containerConfigs } from '../../styles';
+import { colors, containerConfigs, typoSizes } from '../../styles';
 
 const TitleWrapper = styled.div`
     ${containerConfigs}
@@ -15,7 +15,13 @@ const IntroTitle = styled.h1`
     }
 `;
 
+const CallToAction = styled.h1`
+    font-size: ${typoSizes.medium};
+    margin: 0 auto;
+`;
+
 export {
     TitleWrapper,
-    IntroTitle
+    IntroTitle,
+    CallToAction
 }
