@@ -2,14 +2,9 @@ import React from 'react'
 import frontEndIcon from '../../assets/img/frontend.svg';
 import backEndIcon from '../../assets/img/backend.svg';
 import uiuxIcon from '../../assets/img/ui.svg';
-import styles from '../../styles.js';
-import styled from 'styled-components';
+import {AbilitiesWrapper} from './abilities-styles';
 
 export default function Abilities() {
-    const AbilitiesWrapper = styled.div`
-        background: ${styles.theme.colors.primary};
-        color: ${styles.theme.colors.tertiary};
-    `;
 
     return (
         <AbilitiesWrapper>
