@@ -2,13 +2,8 @@ import styled from 'styled-components';
 import { colors, containerConfigs, typoSizes } from '../../styles';
 
 const TitleWrapper = styled.div`
-    ${containerConfigs}
     background: ${colors.tertiary};
     color: ${colors.quartenary};
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 60px;
 `;
 
 const IntroTitle = styled.h1`
@@ -25,8 +20,17 @@ const CallToAction = styled.p`
     margin: 0 auto;
 `;
 
+const Container = styled.div`
+    ${containerConfigs}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+`;
+
 export {
     TitleWrapper,
     IntroTitle,
-    CallToAction
+    CallToAction, 
+    Container
 }
