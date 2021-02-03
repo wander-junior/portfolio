@@ -4,10 +4,11 @@ import frontEndIcon from '../../assets/img/frontend.svg';
 import backEndIcon from '../../assets/img/backend.svg';
 import uiuxIcon from '../../assets/img/ui.svg';
 
-import { Container } from '../../styles';
+import { Container, colors } from '../../styles';
 import { AbilitiesWrapper, Title, List } from './abilities-styles';
 
 import Item from './Item';
+import Button from '../Button';
 
 export default function Abilities() {
 
@@ -32,7 +33,7 @@ export default function Abilities() {
                         description="Eu crio interfaces intuitivas e bonitas para o seu site"
                     />    
                 </List>
-                <button>Saiba mais</button>
+                <Button text={"Saiba mais"} mainColor={colors.tertiary} secondaryColor={colors.primary} />
             </Container>
         </AbilitiesWrapper>
     )
