@@ -1,11 +1,13 @@
-import React, {Fragment} from 'react'
+import React from 'react'
+
+import { ItemWrapper, Description, Subtitle, Icon } from './item-styles';
 
 export default function index({name, icon, description}) {
     return (
-        <li>
-            <img src={icon} alt={`Ícone ${name}`}/>
-            <h2>{name}</h2>
-            <p>{description}</p>
-        </li>
+        <ItemWrapper>
+            <Icon src={icon} alt={`Ícone ${name}`}/>
+            <Subtitle>{name}</Subtitle>
+            <Description>{description}</Description>
+        </ItemWrapper>
     )
 }
