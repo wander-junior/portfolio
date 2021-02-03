@@ -14,5 +14,4 @@ const List = styled.ul`
     display: flex;
 `;
 
-
 export {AbilitiesWrapper, Title, List};

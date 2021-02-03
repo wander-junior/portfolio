@@ -7,6 +7,8 @@ import uiuxIcon from '../../assets/img/ui.svg';
 import { Container } from '../../styles';
 import { AbilitiesWrapper, Title, List } from './abilities-styles';
 
+import Item from './Item';
+
 export default function Abilities() {
 
     return (
@@ -14,21 +16,21 @@ export default function Abilities() {
             <Container>
                 <Title>Serviços</Title>
                 <List>
-                    <li>
-                        <img src={frontEndIcon} alt={"Ícone Front End"}/>
-                        <h2>Front End</h2>
-                        <p>Eu programo a interface gráfica de seu site</p>
-                    </li>
-                    <li>
-                        <img src={backEndIcon} alt={"Ícone Back End"}/>
-                        <h2>Back End</h2>
-                        <p>Eu implemento aplicações e o banco de dados do seu site</p>
-                    </li>
-                    <li>
-                        <img src={uiuxIcon} alt={"Ícone UI/UX Design"}/>
-                        <h2>UI/UX Design</h2>
-                        <p>Eu crio interfaces intuitivas e bonitas para o seu site</p>
-                    </li>
+                    <Item 
+                        name="Front End" 
+                        icon={frontEndIcon} 
+                        description="Eu programo a interface gráfica de seu site"
+                    />
+                    <Item 
+                        name="Back End" 
+                        icon={backEndIcon} 
+                        description="Eu implemento aplicações e o banco de dados do seu site"
+                    />    
+                    <Item 
+                        name="UI/UX Design" 
+                        icon={uiuxIcon} 
+                        description="Eu crio interfaces intuitivas e bonitas para o seu site"
+                    />    
                 </List>
                 <button>Saiba mais</button>
             </Container>
