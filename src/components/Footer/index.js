@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import githubIcon from '../../assets/img/github.svg'
 import linkedinIcon from '../../assets/img/linkedin.svg'
-import styles from '../../styles.js';
+import { colors } from '../../styles.js';
 
 
 export default function Footer() {
     const FooterWrapper = styled.div`
-        background: ${styles.theme.colors.primary}
+        background: ${colors.primary}
     `
 
     return (

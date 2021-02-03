@@ -1,20 +1,20 @@
 import styled from 'styled-components'
-import styles from '../../styles.js';
+import { colors, containerConfigs, typoSizes } from '../../styles.js';
 
 const MenuWrapper = styled.nav`
-    background: ${styles.theme.colors.primary};
+    background: ${colors.primary};
 `;
 
 const MenuUl = styled.ul`
-    ${styles.theme.containerConfigs}
+    ${containerConfigs}
 `;
 
 const MenuItem = styled.li`
-    color: ${styles.theme.colors.tertiary};
+    color: ${colors.tertiary};
     margin-right: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
-    font-size: ${styles.theme.typoSizes.medium};
+    font-size: ${typoSizes.medium};
 `;
 
 export {

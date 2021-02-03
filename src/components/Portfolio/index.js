@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import styles from '../../styles.js';
+import { colors } from '../../styles.js';
 
 export default function Portfolio() {
     const PortfolioWrapper = styled.div`
-        background: ${styles.theme.colors.tertiary};
-        color: ${styles.theme.colors.quartenary};
+        background: ${colors.tertiary};
+        color: ${colors.quartenary};
     `;
 
     return (
