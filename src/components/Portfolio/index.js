@@ -1,17 +1,16 @@
 import React from 'react'
-import styled from 'styled-components'
-import { colors } from '../../styles.js';
+
+import { PortfolioWrapper } from './portfolio-styles';
+import { colors, Container } from '../../styles.js';
+import Button from '../Button';
 
 export default function Portfolio() {
-    const PortfolioWrapper = styled.div`
-        background: ${colors.tertiary};
-        color: ${colors.quartenary};
-    `;
-
     return (
-        <PortfolioWrapper>
-            <h1>Portfólio</h1>
-            <button>Veja mais</button>
-        </PortfolioWrapper>
+        <Container>
+            <PortfolioWrapper>
+                <h1>Portfólio</h1>
+                <Button text="Veja mais" mainColor={colors.primary} secondaryColor={colors.tertiary} />
+            </PortfolioWrapper>
+        </Container>
     )
 }
