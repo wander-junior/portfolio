@@ -56,6 +56,7 @@ const GlobalStyle = createGlobalStyle`
 
     h1 {
         font-size: ${typoSizes.large};
+        line-height: ${typoSizes.largeLineHeight};
         margin: 0 auto;
         text-align: center;
         ::after {

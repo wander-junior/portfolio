@@ -11,6 +11,7 @@ const ItemWrapper = styled.li`
 
 const Description = styled.p`
     font-size: ${typoSizes.small};
+    line-height: ${typoSizes.smallLineHeight};
     text-align: center;
     padding-bottom: 40px;
     padding-top: 20px;
