@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <GlobalFonts />
       <GlobalStyle />
-      <Menu />
       <BrowserRouter>
+        <Menu />
         <Route exact path='/' component={Home}/>
         <Route path='/sobre' component={Sobre} />
         <Route path='/portfolio' component={PortfolioPage}/>
