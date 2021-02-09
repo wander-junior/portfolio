@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import frontEndIcon from '../../assets/img/frontend.svg';
 import backEndIcon from '../../assets/img/backend.svg';
@@ -33,7 +34,9 @@ export default function Abilities() {
                         description="Eu crio interfaces intuitivas e bonitas para o seu site"
                     />    
                 </List>
-                <Button text={"Saiba mais"} mainColor={colors.tertiary} secondaryColor={colors.primary} />
+                <Link to='/sobre'>
+                    <Button text={"Saiba mais"} mainColor={colors.tertiary} secondaryColor={colors.primary} />
+                </Link>
             </Container>
         </AbilitiesWrapper>
     )

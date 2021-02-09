@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { PortfolioWrapper } from './portfolio-styles';
 import { colors, Container } from '../../styles.js';
@@ -9,7 +10,9 @@ export default function Portfolio() {
         <Container>
             <PortfolioWrapper>
                 <h1>Portfólio</h1>
-                <Button text="Veja mais" mainColor={colors.primary} secondaryColor={colors.tertiary} />
+                <Link to='/portfolio'>
+                    <Button text="Veja mais" mainColor={colors.primary} secondaryColor={colors.tertiary} />
+                </Link>
             </PortfolioWrapper>
         </Container>
     )
