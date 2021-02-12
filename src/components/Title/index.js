@@ -9,7 +9,7 @@ export default function Title() {
     return (
         <TitleWrapper>
             <Container>
-                <IntroTitle>Olá! Meu nome é Wander e eu sou desenvolvedor WEB FullStack.</IntroTitle>
+                <IntroTitle>Olá! Meu nome é Wander. Eu sou desenvolvedor WEB FullStack.</IntroTitle>
                 <CallToAction>Conheça o meu Portfólio</CallToAction>
                 <Link to='/portfolio'>
                     <Button text="Veja agora" mainColor={colors.secondary} secondaryColor={colors.tertiary} />
