@@ -13,7 +13,6 @@ const Description = styled.p`
     font-size: ${typoSizes.small};
     line-height: ${typoSizes.smallLineHeight};
     text-align: center;
-    padding-bottom: 40px;
     padding-top: 20px;
     min-width: 96px;
 `;
@@ -27,7 +26,7 @@ const Subtitle = styled.h2`
         display: block;
         width: 40px;
         height: 3px;
-        background: ${colors.tertiary};
+        background: ${props => props.expanded ? colors.quartenary : colors.tertiary};
         margin: 20px auto 0px auto;
     }
 `;
@@ -36,4 +35,33 @@ const Icon = styled.img`
     margin-top: 20px;
 `;
 
-export { ItemWrapper, Description, Subtitle, Icon };
+const AbilitiesListWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: ${colors.quartenary};
+        margin: 20px auto 30px auto;
+    }
+`;
+
+const AbilitiesSubtitle = styled.h3`
+    font-weight: bold;
+    padding-bottom: 20px;
+`;
+
+const List = styled.ul`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+const ListItem = styled.li`
+    margin-bottom: 10px;
+`;
+
+export { ItemWrapper, Description, Subtitle, Icon, AbilitiesListWrapper, AbilitiesSubtitle, List, ListItem };

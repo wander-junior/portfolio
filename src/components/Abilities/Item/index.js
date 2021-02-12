@@ -1,13 +1,29 @@
 import React from 'react'
 
-import { ItemWrapper, Description, Subtitle, Icon } from './item-styles';
+import { 
+        ItemWrapper, 
+        Description, 
+        Subtitle, 
+        Icon,
+        AbilitiesListWrapper, 
+        AbilitiesSubtitle,
+        List,
+        ListItem
+    } from './item-styles';
 
-export default function index({name, icon, description}) {
+export default function index({name, icon, altIcon, description, isExpanded, abilitiesList}) {
     return (
         <ItemWrapper>
-            <Icon src={icon} alt={`Ícone ${name}`}/>
-            <Subtitle>{name}</Subtitle>
+            <Icon src={isExpanded.isExpanded ? altIcon : icon} alt={`Ícone ${name}`}/>
+            <Subtitle expanded={isExpanded.isExpanded}>{name}</Subtitle>
             <Description>{description}</Description>
+            { isExpanded.isExpanded ? 
+                <AbilitiesListWrapper>
+                    <AbilitiesSubtitle>Tecnologias usadas</AbilitiesSubtitle>
+                    <List>{abilitiesList.map(ability => <ListItem key={ability}>{ability}</ListItem>)}</List>
+                </AbilitiesListWrapper>
+                : null
+            }
         </ItemWrapper>
     )
 }

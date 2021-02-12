@@ -8,7 +8,7 @@ export default function index() {
     return (
         <div>
             <Title/>
-            <Abilities/>
+            <Abilities isExpanded={false}/>
             <Portfolio/>
         </div>
     )
