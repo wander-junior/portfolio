@@ -11,7 +11,15 @@ const containerConfigs = `
     display: flex;
     max-width: 1170px;
     margin: 0 auto;
-`
+
+    @media (max-width: 770px) {
+        max-width: 470px;
+    }
+
+    @media (max-width: 500px) {
+        max-width: 400px;
+    }
+`   
 
 const typoSizes = {
     small: '1.125em',
