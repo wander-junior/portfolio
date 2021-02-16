@@ -7,6 +7,16 @@ const ItemWrapper = styled.li`
     flex-direction: column;
     align-items: center;
     max-width: 370px;
+    @media (max-width: 770px) {
+        ${props => props.expanded ? '&:nth-child(1)::after, &:nth-child(2)::after' : '::after'} {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: ${props => props.expanded ? colors.quartenary : colors.tertiary};
+            margin: 40px auto 20px auto;    
+        }
+    }
 `;
 
 const Description = styled.p`

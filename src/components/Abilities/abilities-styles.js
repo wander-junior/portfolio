@@ -16,6 +16,10 @@ const Title = styled.h1`
 const List = styled.ul`
     display: flex;
     padding-bottom: ${props => props.expanded ? '0px' : '40px'};
+
+    @media (max-width: 770px) {
+        flex-direction: column;
+    }
 `;
 
 const AboutDescription = styled.p`

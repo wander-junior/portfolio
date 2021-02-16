@@ -13,7 +13,7 @@ import {
 
 export default function index({name, icon, altIcon, description, isExpanded, abilitiesList}) {
     return (
-        <ItemWrapper>
+        <ItemWrapper expanded={isExpanded.isExpanded}>
             <Icon src={isExpanded.isExpanded ? altIcon : icon} alt={`Ícone ${name}`}/>
             <Subtitle expanded={isExpanded.isExpanded}>{name}</Subtitle>
             <Description>{description}</Description>
