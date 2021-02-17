@@ -1,6 +1,15 @@
 import styled from "styled-components";
 import { typoSizes } from '../../styles';
 
+const borderStyle = `
+    border: 3px solid #5B21CD;
+    border-radius: 9px;
+    min-width: calc(100% - 20px);
+    padding-left: 10px; 
+    padding-right: 10px;
+    margin-bottom: 40px;
+`;
+
 const Contact = styled.fieldset`
     padding-top: 60px;
 `;
@@ -11,14 +20,18 @@ const LabelTxt = styled.p`
 `;
 
 const Input = styled.input`
-    border: 3px solid #5B21CD;
-    border-radius: 9px;
-    min-width: calc(100% - 20px);
-    height: ${props => props.name === "message" ? '180px;' : '60px;'};
     font-size: ${typoSizes.small};
-    margin-bottom: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
+    ${borderStyle}
+    height: 60px;
 `;
 
-export { Contact, LabelTxt, Input };
+const InputTxtArea = styled.textarea`
+    font-size: ${typoSizes.small};
+    line-height: ${typoSizes.smallLineHeight};
+    ${borderStyle}
+    height: 180px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+`;
+
+export { Contact, LabelTxt, Input, InputTxtArea };

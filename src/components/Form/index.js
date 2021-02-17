@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../Button';
 
-import { Contact, LabelTxt, Input } from './form-styles';
+import { Contact, LabelTxt, Input, InputTxtArea } from './form-styles';
 
 export default function index() {
     return (
@@ -17,7 +17,7 @@ export default function index() {
                 </label>
                 <label>
                     <LabelTxt>Mensagem</LabelTxt>
-                    <Input type="textarea" name="message"/>
+                    <InputTxtArea name="message"/>
                 </label>
                 <Button text="Enviar" mainColor="#5B21CD" secondaryColor="#FEFDFE"/>
             </Contact>
