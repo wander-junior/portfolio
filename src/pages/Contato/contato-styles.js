@@ -6,6 +6,10 @@ const ContatoWrapper = styled.div`
     min-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr; 
+
+    @media (max-width: 770px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 const InfoSubtitle = styled.h2`
