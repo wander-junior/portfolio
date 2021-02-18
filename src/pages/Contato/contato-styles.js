@@ -12,19 +12,31 @@ const ContatoWrapper = styled.div`
     }
 `;
 
+const Info = styled.div`
+    padding-top: 60px;
+
+    @media (max-width: 770px) {
+        padding-top: 40px;
+    }
+`;
+
 const InfoSubtitle = styled.h2`
     font-size: ${typoSizes.medium};
     font-weight: bold;
     color: ${colors.secondary};
     padding-bottom: 20px;
-`;
 
-const Info = styled.div`
-    padding-top: 60px;
+    @media (max-width: 770px) {
+        text-align: center;
+    }
 `;
 
 const InfoItem = styled.p`
     padding-bottom: 10px;
+    
+    @media (max-width: 770px) {
+        text-align: center;
+    }
 `;
 
 export {ContatoWrapper, InfoSubtitle, Info, InfoItem};
