@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from '../../styles';
 import Form from '../../components/Form';
 
-import { ContatoWrapper } from './contato-styles';
+import { ContatoWrapper, InfoSubtitle, Info, InfoItem } from './contato-styles';
 
 export default function index() {
     return (
@@ -11,11 +11,11 @@ export default function index() {
             <Container>
                 <ContatoWrapper>
                     <Form />
-                    <div>
-                        <h2>DADOS</h2>
-                        <p>+55 (31) 98888-4231</p>
-                        <p>wanderjrcruz96@gmail.com</p>
-                    </div>
+                    <Info>
+                        <InfoSubtitle>DADOS</InfoSubtitle>
+                        <InfoItem>+55 (31) 98888-4231</InfoItem>
+                        <InfoItem>wanderjrcruz96@gmail.com</InfoItem>
+                    </Info>
                 </ContatoWrapper>
             </Container>
         </div>
