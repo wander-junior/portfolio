@@ -4,7 +4,7 @@ import { typoSizes } from '../../styles';
 const borderStyle = `
     border: 3px solid #5B21CD;
     border-radius: 9px;
-    min-width: calc(100% - 20px);
+    min-width: 470px;
     padding-left: 10px; 
     padding-right: 10px;
     margin-bottom: 40px;
