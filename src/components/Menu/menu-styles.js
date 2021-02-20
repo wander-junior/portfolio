@@ -3,15 +3,25 @@ import { colors, containerConfigs, typoSizes } from '../../styles.js';
 
 const MenuWrapper = styled.nav`
     background: ${colors.primary};
-    min-width: 100%;
+
+    @media (min-width: 501px) {
+        min-width: 100%;
+    }
 
     @media (max-width: 500px) {
         display: ${props => props.isActive ? 'block' : 'none'};
+        width: 185px;
+        position: absolute;
+        right: 0;
     }
 `;
 
 const MenuUl = styled.ul`
     ${containerConfigs}
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 `;
 
 const MenuItem = styled.li`
@@ -20,6 +30,10 @@ const MenuItem = styled.li`
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: ${typoSizes.medium};
+
+    @media (max-width: 500px) {
+        text-align: center;
+    }
 `;
 
 const SandwichMenu = styled.button`
