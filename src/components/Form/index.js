@@ -1,7 +1,10 @@
 import React from 'react'
 import Button from '../Button';
+import * as emailjs from 'emailjs-com';
 
 import { Contact, LabelTxt, Input, InputTxtArea } from './form-styles';
+
+const { SERVICE_ID, TEMPLATE_ID, USER_ID } = process.env;
 
 export default function Form() {
     const [name, setName] = React.useState('');
@@ -16,6 +19,21 @@ export default function Form() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        const templetaParams = {
+            from_name: email,
+            to_name: 'wanderjrcruz96@gmail.com',
+            subject: `Contato Portfólio ${name}`,
+            message: message
+        }
+
+        emailjs.send(
+            SERVICE_ID,
+            TEMPLATE_ID,
+            templetaParams,
+            USER_ID,
+        )
+
     }
 
     return (
