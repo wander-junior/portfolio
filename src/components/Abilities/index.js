@@ -25,7 +25,7 @@ export default function Abilities(isExpanded) {
         <AbilitiesWrapper expanded={isExpanded.isExpanded}>
             <Container>
                 { isExpanded.isExpanded ?
-                    <AboutDescription>Nascido em Conselheiro Lafaiete, Minas Gerais, atualmente estudo Ciência da Computação na Universidade Federal de Ouro Preto. Apaixonado por tecnologia, vou ajudar você a construir sua presença online com as ferramentas mais atualizadas do mercado.</AboutDescription>
+                    <AboutDescription>Sou natural de Conselheiro Lafaiete, Minas Gerais e atualmente estudo Ciência da Computação na Universidade Federal de Ouro Preto. Sou apaixonado por tecnologia e vou ajudar você a construir sua presença online com as ferramentas mais atualizadas do mercado.</AboutDescription>
                 : null
                 }
                 <Title expanded={isExpanded.isExpanded}>Serviços</Title>
