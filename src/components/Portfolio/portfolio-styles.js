@@ -7,4 +7,16 @@ const PortfolioWrapper = styled.div`
     color: ${colors.quartenary};
 `;
 
-export {PortfolioWrapper};
+const ItemsWrapper = styled.div`
+    display: grid;
+    @media (min-width: 771px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+    @media (max-width: 770px) {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+`;
+
+export {PortfolioWrapper, ItemsWrapper};
