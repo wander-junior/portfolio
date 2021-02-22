@@ -19,4 +19,11 @@ const ItemsWrapper = styled.div`
     }
 `;
 
-export {PortfolioWrapper, ItemsWrapper};
+const PortfolioTitle = styled.h1`
+    ::after {
+        background: ${colors.quartenary};
+        margin-bottom: 40px;    
+    }
+`;
+
+export {PortfolioWrapper, ItemsWrapper, PortfolioTitle};
