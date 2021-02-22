@@ -20,7 +20,6 @@ export default function Abilities(isExpanded) {
     const backEndAbilities = ['Node.js', 'MongoDB', 'Heroku', 'Wordpress'];
     const uiUxAbilities = ['Figma', 'Adobe XD'];
 
-    console.log(isExpanded)
     return (
         <AbilitiesWrapper expanded={isExpanded.isExpanded}>
             <Container>

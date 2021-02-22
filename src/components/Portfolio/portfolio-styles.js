@@ -5,10 +5,14 @@ const PortfolioWrapper = styled.div`
     padding-top: 60px;
     background: ${colors.tertiary};
     color: ${colors.quartenary};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 const ItemsWrapper = styled.div`
     display: grid;
+    margin-bottom: ${props => props.isExpanded ? '0px' : '40px' };
     @media (min-width: 771px) {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;

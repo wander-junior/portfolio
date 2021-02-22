@@ -9,7 +9,7 @@ export default function index() {
         <div>
             <Title/>
             <Abilities isExpanded={false}/>
-            <Portfolio/>
+            <Portfolio isExpanded={false}/>
         </div>
     )
 }

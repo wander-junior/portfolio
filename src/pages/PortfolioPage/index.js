@@ -5,7 +5,7 @@ import Portfolio from "../../components/Portfolio";
 export default function index() {
     return (
         <div>
-            <Portfolio />
+            <Portfolio isExpanded={true}/>
         </div>
     )
 }

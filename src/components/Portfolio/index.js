@@ -6,19 +6,21 @@ import { colors, Container } from '../../styles.js';
 import Button from '../Button';
 import PortfolioItem from './PortfolioItem';
 
-export default function Portfolio() {
+export default function Portfolio({isExpanded}) {
     return (
         <Container>
             <PortfolioWrapper>
                 <PortfolioTitle>Portfólio</PortfolioTitle>
-                <ItemsWrapper>
+                <ItemsWrapper isExpanded={isExpanded}>
                     <PortfolioItem />
                     <PortfolioItem />
                     <PortfolioItem />
                 </ItemsWrapper>
-                <Link to='/portfolio'>
-                    <Button text="Veja mais" mainColor={colors.primary} secondaryColor={colors.tertiary} />
-                </Link>
+                {!isExpanded ? 
+                    <Link to='/portfolio'>
+                        <Button text="Veja mais" mainColor={colors.primary} secondaryColor={colors.tertiary} />
+                    </Link>
+                : null}
             </PortfolioWrapper>
         </Container>
     )
