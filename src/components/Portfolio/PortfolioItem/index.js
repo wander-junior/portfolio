@@ -11,7 +11,8 @@ import {
     LinkType, 
     ModalLink, 
     ContentWrapper,
-    CloseButton
+    CloseButton,
+    ModalBackground
 } from './PortfolioItem-styles';
 
 export default function PortfolioItem() {
@@ -27,6 +28,7 @@ export default function PortfolioItem() {
 
     return (
         <div>
+            {isModalOpen ? <ModalBackground onClick={handleCloseClick}/> : null}
             <Modal isModalOpen={isModalOpen}>
                 <CloseButton onClick={handleCloseClick}>X</CloseButton>
                 <ContentWrapper>

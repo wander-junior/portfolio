@@ -18,6 +18,16 @@ const Modal = styled.div`
     margin-left: -580px;
     background-color: ${colors.tertiary};
     color: ${colors.quartenary};
+    z-index: 2;
+`;
+
+const ModalBackground = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.4);
 `;
 
 const ContentWrapper = styled.div`
@@ -74,7 +84,8 @@ const CloseButton = styled.button`
     }
 `;
 
-export { 
+export {
+    ModalBackground,
     ItemImg, 
     Modal, 
     ModalImg, 
