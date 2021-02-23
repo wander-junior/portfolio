@@ -45,6 +45,7 @@ const ModalText = styled.p`
 const LinkType = styled.p`
     font-size: ${typoSizes.small};
     font-weight: bold;
+    padding-top: 20px;
 `;
 
 const ModalLink = styled.a`
