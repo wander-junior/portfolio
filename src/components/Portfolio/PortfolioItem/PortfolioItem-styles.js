@@ -9,11 +9,13 @@ const ItemImg = styled.img`
 
 const Modal = styled.div`
     display: ${props => props.isModalOpen ? 'block' : 'none'};
-    position: absolute;
+    position: fixed;
     width: 1160px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    height: 720px;
+    top: 50%;
+    left: 50%;
+    margin-top: -360px;
+    margin-left: -580px;
     background-color: ${colors.tertiary};
     color: ${colors.quartenary};
 `;
