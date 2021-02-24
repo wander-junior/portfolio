@@ -13,10 +13,8 @@ const PortfolioWrapper = styled.div`
 const ItemsWrapper = styled.div`
     display: grid;
     margin-bottom: ${props => props.isExpanded ? '0px' : '40px' };
-    @media (min-width: 771px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
-    }
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
     @media (max-width: 770px) {
         grid-template-columns: 1fr;
         grid-gap: 40px;

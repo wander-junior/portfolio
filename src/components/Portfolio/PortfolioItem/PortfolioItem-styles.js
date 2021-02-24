@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colors, typoSizes } from '../../../styles';
 
 const ItemImg = styled.img`
+    max-width: 100%;
     :hover {
         cursor: pointer; 
     }
@@ -10,12 +11,12 @@ const ItemImg = styled.img`
 const Modal = styled.div`
     display: ${props => props.isModalOpen ? 'block' : 'none'};
     position: fixed;
-    max-width: 1160px;
+    max-width: 90vw;
     max-height: 90vh;
     top: 50%;
     left: 50%;
     margin-top: -45vh;
-    margin-left: -580px;
+    margin-left: -45vw;
     overflow: auto;
     background-color: ${colors.tertiary};
     color: ${colors.quartenary};
