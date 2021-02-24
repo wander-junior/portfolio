@@ -16,6 +16,10 @@ const containerConfigs = `
         max-width: 882px;
     }
 
+    @media (max-width: 1020px) {
+        max-width: 700px;
+    }
+
     @media (max-width: 770px) {
         max-width: 470px;
     }
