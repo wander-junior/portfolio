@@ -9,6 +9,10 @@ const borderStyle = `
     padding-right: 10px;
     margin-bottom: 40px;
 
+    @media (max-width: 1200px) {
+        min-width: 360px;
+    }
+
     @media (max-width: 500px) {
         min-width: calc(100% - 20px);
     }
