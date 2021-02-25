@@ -15,7 +15,7 @@ import {
     ModalBackground
 } from './PortfolioItem-styles';
 
-export default function PortfolioItem() {
+export default function PortfolioItem({project}) {
     const [isModalOpen, setIsModalOpen] = React.useState(false);
 
     const handleImageClick = () => {
@@ -36,12 +36,21 @@ export default function PortfolioItem() {
                         <ModalImg src={PrintItem}/>
                     </div>
                     <div>
-                        <ModalTitle>Controle Financeiro Pessoal</ModalTitle>
-                        <ModalText>Projeto desenvolvido durante o Bootcamp fullstack da IGTI. O projeto consiste de um controle financeiro onde pode se adicionar, apagar, editar e deletar registros. No  Front End foi utilizado React e na estilização foi utilizado CSS Flexbox com Materialize. O Back End foi desenvolvido em Node.js, o banco de dados utilizado foi o MongoDB e o deploy foi feito no Heroku.</ModalText>
-                        <LinkType>Link:</LinkType>
-                        <ModalLink href="https://controle-financeiro-wander.herokuapp.com/">https://controle-financeiro-wander.herokuapp.com/</ModalLink>
-                        <LinkType>GitHub:</LinkType>
-                        <ModalLink href="https://github.com/wander-junior/Controle-Financeiro-Pessoal-IGTI">https://github.com/wander-junior/Controle-Financeiro-Pessoal-IGTI</ModalLink>
+                        <ModalTitle>{project.name}</ModalTitle>
+                        <ModalText>{project.text}</ModalText>
+
+                        {project.link !== '' ? 
+                        <>
+                            <LinkType>Link:</LinkType>
+                            <ModalLink href={project.link}>{project.link}</ModalLink>
+                        </> : null}
+
+                        {project.github !== '' ?
+                        <>                        
+                            <LinkType>GitHub:</LinkType>
+                            <ModalLink href={project.github}>{project.github}</ModalLink>
+                        </> : null}
+                        
                     </div>
                 </ContentWrapper>
             </Modal>
