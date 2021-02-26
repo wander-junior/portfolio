@@ -15,9 +15,9 @@ export default function Portfolio({isExpanded}) {
                 <ItemsWrapper isExpanded={isExpanded}>
                     {projects.map((project, index) => {
                         // If isExpanded = True, it will show all projects
-                        if (isExpanded===true) return <PortfolioItem project={project}/>;
+                        if (isExpanded===true) return <PortfolioItem project={project} key={project.id}/>;
                         // If isExpanded = False, it will show only the first three projects
-                        if (index < 3) return <PortfolioItem project={project}/>;
+                        if (index < 3) return <PortfolioItem project={project} key={project.id}/>;
                         return null;
                     }
                     )}

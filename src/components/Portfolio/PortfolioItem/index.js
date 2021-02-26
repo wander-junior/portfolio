@@ -1,6 +1,4 @@
 import React from 'react';
-import ItemImage from '../../../assets/img/ItemPortfolio1.svg';
-import PrintItem from '../../../assets/img/ItemPrint1.png';
 
 import { 
     ItemImg, 
@@ -27,13 +25,13 @@ export default function PortfolioItem({project}) {
     }
 
     return (
-        <div>
+        <li>
             {isModalOpen ? <ModalBackground onClick={handleCloseClick}/> : null}
             <Modal isModalOpen={isModalOpen}>
                 <CloseButton onClick={handleCloseClick}>X</CloseButton>
                 <ContentWrapper>
                     <div>
-                        <ModalImg src={PrintItem}/>
+                        <ModalImg src={(`/img/${project.id}/print.png`)}/>
                     </div>
                     <div>
                         <ModalTitle>{project.name}</ModalTitle>
@@ -54,7 +52,12 @@ export default function PortfolioItem({project}) {
                     </div>
                 </ContentWrapper>
             </Modal>
-            <ItemImg src={ItemImage} alt="" onClick={handleImageClick} />
-        </div>
+            <ItemImg 
+                src={(`img/${project.id}/call.svg`)} 
+                alt="" 
+                onClick={handleImageClick} 
+            />
+            {console.log(`img/${project.id}/call.svg`)}
+        </li>
     )
 }

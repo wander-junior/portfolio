@@ -10,7 +10,7 @@ const PortfolioWrapper = styled.div`
     align-items: center;
 `;
 
-const ItemsWrapper = styled.div`
+const ItemsWrapper = styled.ul`
     display: grid;
     margin-bottom: ${props => props.isExpanded ? '0px' : '40px' };
     grid-template-columns: 1fr 1fr 1fr;
