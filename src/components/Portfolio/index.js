@@ -13,7 +13,14 @@ export default function Portfolio({isExpanded}) {
             <PortfolioWrapper>
                 <PortfolioTitle>Portfólio</PortfolioTitle>
                 <ItemsWrapper isExpanded={isExpanded}>
-                    <PortfolioItem project={projects[0]}/>
+                    {projects.map((project, index) => {
+                        // If isExpanded = True, it will show all projects
+                        if (isExpanded===true) return <PortfolioItem project={project}/>;
+                        // If isExpanded = False, it will show only the first three projects
+                        if (index < 3) return <PortfolioItem project={project}/>;
+                        return null;
+                    }
+                    )}
                 </ItemsWrapper>
                 {!isExpanded ? 
                     <Link to='/portfolio'>
