@@ -65,7 +65,7 @@ const ModalImg = styled.img`
         width: 385px;
     }
     @media (max-width: 500px) {
-        width: 80vw;
+        width: 100%;
     }
 `;
 
