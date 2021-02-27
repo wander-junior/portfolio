@@ -27,9 +27,14 @@ const MenuUl = styled.ul`
 const MenuItem = styled.li`
     color: ${colors.tertiary};
     margin-right: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     font-size: ${typoSizes.medium};
+    transition: 0.2s ease-out;
+
+    :hover {
+        color: ${colors.secondary};
+    }
 
     @media (max-width: 500px) {
         text-align: center;
