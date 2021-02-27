@@ -59,7 +59,8 @@ export default function Abilities(isExpanded) {
                         <Button 
                             text={"Saiba mais"} 
                             mainColor={colors.tertiary} 
-                            secondaryColor={colors.primary} 
+                            secondaryColor={colors.primary}
+                            hoverColor={colors.secondary}
                         />
                     </Link>
                     : null

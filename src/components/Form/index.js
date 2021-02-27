@@ -3,6 +3,7 @@ import Button from '../Button';
 import * as emailjs from 'emailjs-com';
 
 import { Contact, LabelTxt, Input, InputTxtArea } from './form-styles';
+import { colors } from '../../styles';
 
 const { SERVICE_ID, TEMPLATE_ID, USER_ID } = process.env;
 
@@ -51,7 +52,12 @@ export default function Form() {
                     <LabelTxt>Mensagem</LabelTxt>
                     <InputTxtArea name="message" value={message} onChange={handleChange}/>
                 </label>
-                <Button text="Enviar" mainColor="#5B21CD" secondaryColor="#FEFDFE"/>
+                <Button 
+                    text="Enviar" 
+                    mainColor={colors.primary} 
+                    secondaryColor={colors.tertiary}
+                    hoverColor={colors.secondary}
+                />
             </Contact>
         </form>
     )

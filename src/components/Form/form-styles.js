@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { typoSizes, colors } from '../../styles';
 
 const borderStyle = `
-    border: 3px solid #5B21CD;
+    border: 3px solid ${colors.primary};
     border-radius: 9px;
     min-width: 470px;
     padding-left: 10px; 

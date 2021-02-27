@@ -12,7 +12,12 @@ export default function Title() {
                 <IntroTitle>Olá! Meu nome é Wander. Eu sou desenvolvedor WEB FullStack.</IntroTitle>
                 <CallToAction>Conheça o meu Portfólio</CallToAction>
                 <Link to='/portfolio'>
-                    <Button text="Veja agora" mainColor={colors.secondary} secondaryColor={colors.tertiary} />
+                    <Button 
+                        text="Veja agora"
+                        mainColor={colors.primary} 
+                        secondaryColor={colors.tertiary}
+                        hoverColor={colors.secondary}    
+                    />
                 </Link>
             </Container>
         </TitleWrapper>
