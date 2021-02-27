@@ -6,6 +6,10 @@ const ItemImg = styled.img`
     :hover {
         cursor: pointer; 
     }
+
+    @media (max-width: 500px) {
+        max-width: 90vw;
+    }
 `;
 
 const Modal = styled.div`
