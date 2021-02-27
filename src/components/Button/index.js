@@ -11,13 +11,19 @@ const StyledButton = styled.button`
     border-radius: 9px;
     width: 170px;
     height: 60px;
+
+    :hover {
+        cursor: pointer;
+        color: ${props => props.hoverColor};
+        border-color: ${props => props.hoverColor};
+    }
 `;
 
-export default function index({text, mainColor, secondaryColor}) {
+export default function index({text, mainColor, secondaryColor, hoverColor}) {
 
 
     return (
-        <StyledButton mainColor={mainColor} secondaryColor={secondaryColor}>
+        <StyledButton mainColor={mainColor} secondaryColor={secondaryColor} hoverColor={hoverColor}>
             {text}
         </StyledButton>
     )
