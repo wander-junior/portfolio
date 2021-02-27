@@ -52,14 +52,15 @@ const ContentWrapper = styled.div`
     padding: 40px 80px;
     grid-gap: 20px;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1020px) {
         grid-template-columns: 1fr;
-        padding: 100px 40px;
+        padding: 100px 40px 40px 40px;
     }
 `;
 
 const ModalImg = styled.img`
     max-width: 490px;
+    margin: 0 auto;
     @media (max-width: 700px) {
         width: 385px;
     }
@@ -71,6 +72,10 @@ const ModalImg = styled.img`
 const ModalTitle = styled.h2`
     font-size: ${typoSizes.medium};
     padding-bottom: 20px;
+    @media (max-width: 1020px) {
+        text-align: center;
+        padding-top: 20px;
+    }
 `;
 
 const ModalText = styled.p`
@@ -79,10 +84,9 @@ const ModalText = styled.p`
     padding-bottom: 20px;
 `;
 
-const LinkType = styled.p`
+const LinkType = styled.span`
     font-size: ${typoSizes.small};
     font-weight: bold;
-    padding-top: 20px;
 `;
 
 const ModalLink = styled.a`
@@ -91,6 +95,10 @@ const ModalLink = styled.a`
     :hover {
         color: ${colors.secondary};
     }
+`;
+
+const LinkWrapper = styled.div`
+    margin-bottom: 20px;
 `;
 
 const CloseButton = styled.button`
@@ -121,5 +129,6 @@ export {
     LinkType, 
     ModalLink, 
     ContentWrapper, 
-    CloseButton 
+    CloseButton,
+    LinkWrapper
 };

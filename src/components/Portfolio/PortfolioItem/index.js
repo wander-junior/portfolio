@@ -10,7 +10,8 @@ import {
     ModalLink, 
     ContentWrapper,
     CloseButton,
-    ModalBackground
+    ModalBackground,
+    LinkWrapper
 } from './PortfolioItem-styles';
 
 export default function PortfolioItem({project}) {
@@ -30,22 +31,20 @@ export default function PortfolioItem({project}) {
             <Modal isModalOpen={isModalOpen}>
                 <CloseButton onClick={handleCloseClick}>X</CloseButton>
                 <ContentWrapper>
-                    <div>
-                        <ModalImg src={(`/img/${project.id}/print.png`)}/>
-                    </div>
+                    <ModalImg src={(`/img/${project.id}/print.png`)}/>
                     <div>
                         <ModalTitle>{project.name}</ModalTitle>
                         <ModalText>{project.text}</ModalText>
 
                         {project.link !== '' ? 
-                        <>
-                            <LinkType>Link:</LinkType>
+                        <LinkWrapper>
+                            <LinkType>Link: </LinkType>
                             <ModalLink href={project.link}>{project.link}</ModalLink>
-                        </> : null}
+                        </LinkWrapper> : null}
 
                         {project.github !== '' ?
                         <>                        
-                            <LinkType>GitHub:</LinkType>
+                            <LinkType>GitHub: </LinkType>
                             <ModalLink href={project.github}>{project.github}</ModalLink>
                         </> : null}
                         
