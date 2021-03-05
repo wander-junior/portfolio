@@ -56,7 +56,6 @@ export default function PortfolioItem({project}) {
                 alt="" 
                 onClick={handleImageClick} 
             />
-            {console.log(`img/${project.id}/call.svg`)}
         </li>
     )
 }
