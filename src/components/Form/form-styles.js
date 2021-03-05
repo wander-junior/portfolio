@@ -61,4 +61,16 @@ const InputTxtArea = styled.textarea`
     padding-top: 10px;
 `;
 
-export { Contact, LabelTxt, Input, InputTxtArea };
+const SendConfirmation = styled.p`
+    padding-top: 60px;
+    font-size: ${typoSizes.small};
+    color: #31aa39;
+`;
+
+const SendFailure = styled.p`
+    padding: 60px;
+    font-size: ${typoSizes.small};
+    color: #f64540;
+`;
+
+export { Contact, LabelTxt, Input, InputTxtArea, SendConfirmation, SendFailure };
