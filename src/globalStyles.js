@@ -53,6 +53,16 @@ const GlobalStyle = createGlobalStyle`
     }
     /* General Style */
 
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    
+    html, body {
+        margin:0;
+        padding:0;
+    }
+
     body {
         font-family: 'Roboto';
     }

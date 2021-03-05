@@ -13,7 +13,7 @@ import Contato from './pages/Contato';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{marginBottom: '143px'} }>
       <GlobalFonts />
       <GlobalStyle />
       <BrowserRouter>
