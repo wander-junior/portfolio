@@ -12,8 +12,8 @@ export default function Form() {
     const [email, setEmail] = React.useState('');
     const [message, setMessage] = React.useState('');
 
-    let isSent = true;
-    let isSucess = false;
+    let isSent = false;
+    let isSucess = true;
 
     const handleChange = (e) => {
         if (e.target.name === 'name') setName (e.target.value);
