@@ -1,11 +1,11 @@
 import React from 'react'
-import Button from '../Button';
-import * as emailjs from 'emailjs-com';
+import * as emailjs from 'emailjs-com'; 
 
+import Button from '../Button';
 import { Contact, LabelTxt, Input, InputTxtArea } from './form-styles';
 import { colors } from '../../styles';
 
-const { SERVICE_ID, TEMPLATE_ID, USER_ID } = process.env;
+const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID } = process.env;
 
 export default function Form() {
     const [name, setName] = React.useState('');
@@ -29,10 +29,10 @@ export default function Form() {
         }
 
         emailjs.send(
-            SERVICE_ID,
-            TEMPLATE_ID,
+            REACT_APP_SERVICE_ID,
+            REACT_APP_TEMPLATE_ID,
             templetaParams,
-            USER_ID,
+            REACT_APP_USER_ID,
         )
 
     }
