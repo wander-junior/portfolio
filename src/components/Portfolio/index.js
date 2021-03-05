@@ -24,7 +24,12 @@ export default function Portfolio({isExpanded}) {
                 </ItemsWrapper>
                 {!isExpanded ? 
                     <Link to='/portfolio'>
-                        <Button text="Veja mais" mainColor={colors.primary} secondaryColor={colors.tertiary} />
+                        <Button 
+                            text="Veja mais" 
+                            mainColor={colors.primary} 
+                            secondaryColor={colors.tertiary}
+                            hoverColor={colors.secondary} 
+                        />
                     </Link>
                 : null}
             </PortfolioWrapper>
