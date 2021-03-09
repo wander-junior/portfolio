@@ -12,7 +12,7 @@ export default function Form() {
     const [email, setEmail] = React.useState('');
     const [message, setMessage] = React.useState('');
 
-    let isSent = true;
+    let isSent = false;
     let isSucess = true;
 
     const handleChange = (e) => {
