@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import {MenuWrapper, MenuUl, MenuItem, SandwichMenu, Flex} from './menu-styles';
+import {MenuWrapper, MenuUl, MenuItem, SandwichMenu, Flex, MarginFix} from './menu-styles';
 
 export default function Menu() {
     const [isActive, setIsActive] = React.useState(false);
@@ -42,6 +42,7 @@ export default function Menu() {
                     <MenuItem><NavLink to='/contato'>CONTATO</NavLink></MenuItem>
                 </MenuUl>
             </MenuWrapper>
+            <MarginFix isActive={isActive} />
         </>
     )
 }

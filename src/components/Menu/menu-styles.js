@@ -75,10 +75,21 @@ const Flex = styled.div`
     justify-content: flex-end;
 `;
 
+const MarginFix = styled.div`
+    ${props => props.isActive ? 
+        `
+            margin-top: 50px;
+        ` 
+    : 
+        null
+    };
+`; 
+
 export {
     Flex,
     SandwichMenu,
     MenuWrapper,
     MenuUl,
-    MenuItem
+    MenuItem,
+    MarginFix
 }
