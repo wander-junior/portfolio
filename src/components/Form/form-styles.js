@@ -18,6 +18,14 @@ const borderStyle = `
     }
 `;
 
+const messageText = `
+    padding-top: 60px;
+    font-size: ${typoSizes.small};
+    @media (max-width: 770px) {
+        text-align: center;
+    }
+`;
+
 const Contact = styled.fieldset`
     padding-top: 60px;
     
@@ -62,14 +70,12 @@ const InputTxtArea = styled.textarea`
 `;
 
 const SendConfirmation = styled.p`
-    padding-top: 60px;
-    font-size: ${typoSizes.small};
+    ${messageText};
     color: #31aa39;
 `;
 
 const SendFailure = styled.p`
-    padding: 60px;
-    font-size: ${typoSizes.small};
+    ${messageText};
     color: #f64540;
 `;
 
