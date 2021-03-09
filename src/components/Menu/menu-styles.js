@@ -37,7 +37,12 @@ const MenuItem = styled.li`
     }
 
     @media (max-width: 500px) {
+        padding-bottom: 40px;
+        margin: 0 auto; 
         text-align: center;
+        :first-child {
+            padding-top: 40px;
+        }
     }
 `;
 
@@ -77,9 +82,7 @@ const Flex = styled.div`
 
 const MarginFix = styled.div`
     ${props => props.isActive ? 
-        `
-            margin-top: 50px;
-        ` 
+        `margin-top: 50px;` 
     : 
         null
     };
