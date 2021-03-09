@@ -14,7 +14,7 @@ const borderStyle = `
     }
 
     @media (max-width: 500px) {
-        min-width: calc(100% - 20px);
+        min-width: 80vw;
     }
 `;
 
