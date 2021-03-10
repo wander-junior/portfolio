@@ -31,7 +31,7 @@ export default function PortfolioItem({project}) {
             <Modal isModalOpen={isModalOpen}>
                 <CloseButton onClick={handleCloseClick}>X</CloseButton>
                 <ContentWrapper>
-                    <ModalImg src={(`/img/${project.id}/print.png`)}/>
+                    <ModalImg src={(`/img/${project.id}/print.png`)} alt={`Imagem do site ${project.name}`}/>
                     <div>
                         <ModalTitle>{project.name}</ModalTitle>
                         <ModalText>{project.text}</ModalText>
@@ -53,7 +53,7 @@ export default function PortfolioItem({project}) {
             </Modal>
             <ItemImg 
                 src={(`img/${project.id}/call.svg`)} 
-                alt="" 
+                alt={`Logo do site ${project.name}`} 
                 onClick={handleImageClick} 
             />
         </li>
