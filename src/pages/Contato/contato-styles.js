@@ -12,7 +12,7 @@ const ContatoWrapper = styled.div`
     }
 `;
 
-const Info = styled.div`
+const Info = styled.address`
     padding-top: 60px;
 
     @media (max-width: 770px) {

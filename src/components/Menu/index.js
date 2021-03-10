@@ -30,7 +30,7 @@ export default function Menu() {
     }
 
     return (
-        <>
+        <header>
             <Flex>
                 <SandwichMenu isActive={isActive} onClick={handleButtonClick}/>
             </Flex>
@@ -43,6 +43,6 @@ export default function Menu() {
                 </MenuUl>
             </MenuWrapper>
             <MarginFix isActive={isActive} />
-        </>
+        </header>
     )
 }
