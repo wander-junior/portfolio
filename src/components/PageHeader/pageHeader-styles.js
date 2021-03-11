@@ -6,7 +6,7 @@ const HeaderWrapper = styled.header`
     background-repeat: no-repeat;
     color: ${colors.tertiary};
     text-align: center;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
 
     & > h2 {
