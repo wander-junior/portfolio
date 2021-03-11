@@ -81,8 +81,13 @@ const Flex = styled.div`
 `;
 
 const MarginFix = styled.div`
-    ${props => props.isActive ? 
-        `margin-top: 50px;` 
+    ${props => props.isActive ?
+        // Create a empty div for fix height isue when menu is active
+        `
+            height:50px;
+            width:100%;
+            clear:both;
+        `
     : 
         null
     };
