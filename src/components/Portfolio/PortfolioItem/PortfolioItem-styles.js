@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colors, typoSizes } from '../../../styles';
 
 const ItemImg = styled.img`
+    transition: .5s ease;
     max-width: 100%;
     :hover {
         cursor: pointer; 
@@ -119,6 +120,38 @@ const CloseButton = styled.button`
     }
 `;
 
+const Middle = styled.div`
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    :hover {
+        opacity: 1;
+    }
+`;
+
+const ItemImgWrapper = styled.div`
+    position: relative;
+    cursor: pointer;
+    & ${ItemImg}:hover + ${Middle} {
+        opacity: 1;
+    }
+    :hover ${ItemImg}{
+        opacity: 0.2;
+    }
+`;
+
+const OverlayText = styled.div`
+    transition: .5s ease;
+    font-size: ${typoSizes.medium};
+    color: ${colors.primary};
+    :hover {
+        color: ${colors.secondary};
+    }
+`;
+
 export {
     ModalBackground,
     ItemImg, 
@@ -130,5 +163,8 @@ export {
     ModalLink, 
     ContentWrapper, 
     CloseButton,
-    LinkWrapper
+    LinkWrapper,
+    Middle,
+    ItemImgWrapper,
+    OverlayText
 };

@@ -11,7 +11,10 @@ import {
     ContentWrapper,
     CloseButton,
     ModalBackground,
-    LinkWrapper
+    LinkWrapper,
+    Middle,
+    ItemImgWrapper,
+    OverlayText
 } from './PortfolioItem-styles';
 
 export default function PortfolioItem({project}) {
@@ -51,11 +54,17 @@ export default function PortfolioItem({project}) {
                     </div>
                 </ContentWrapper>
             </Modal>
-            <ItemImg 
-                src={(`img/${project.id}/call.svg`)} 
-                alt={`Logo do site ${project.name}`} 
-                onClick={handleImageClick} 
-            />
+
+            <ItemImgWrapper onClick={handleImageClick} >
+                <ItemImg 
+                    src={(`img/${project.id}/call.svg`)} 
+                    alt={`Logo do site ${project.name}`} 
+                />
+                <Middle>
+                    <OverlayText>Saiba mais</OverlayText>
+                </ Middle>
+            </ItemImgWrapper>
+
         </li>
     )
 }
