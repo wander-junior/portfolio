@@ -7,6 +7,10 @@ const ContatoWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr; 
 
+    @media (max-width: 1020px) {
+        grid-gap: 60px;
+    }
+
     @media (max-width: 770px) {
         grid-template-columns: 1fr;
     }
