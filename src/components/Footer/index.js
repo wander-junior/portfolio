@@ -26,6 +26,7 @@ export default function Footer() {
         <FooterWrapper>
             <SocialLink
                 href="https://github.com/wander-junior"
+                target="_blank"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
@@ -37,6 +38,7 @@ export default function Footer() {
             </SocialLink>
             <SocialLink 
                 href="https://br.linkedin.com/in/wanderjr-cruz"
+                target="_blank"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >

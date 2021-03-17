@@ -42,13 +42,13 @@ export default function PortfolioItem({project}) {
                         {project.link !== '' ? 
                         <LinkWrapper>
                             <LinkType>Link: </LinkType>
-                            <ModalLink href={project.link}>{project.link}</ModalLink>
+                            <ModalLink href={project.link} target="_blank">{project.link}</ModalLink>
                         </LinkWrapper> : null}
 
                         {project.github !== '' ?
                         <>                        
                             <LinkType>GitHub: </LinkType>
-                            <ModalLink href={project.github}>{project.github}</ModalLink>
+                            <ModalLink href={project.github} target="_blank">{project.github}</ModalLink>
                         </> : null}
                         
                     </div>
