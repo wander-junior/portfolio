@@ -32,7 +32,7 @@ const projects = [
         name: 'Le Scone',
         text: 'Site com o layout responsivo utilizando o CSS com SASS. Desenvolvido durante o curso "CSS com SASS" da Origamid.',
         link: '',
-        github: 'https://www.origamid.com/curso/css-com-sass'
+        github: 'https://github.com/wander-junior/Le-Scone'
     },
     {
         id: 6,
