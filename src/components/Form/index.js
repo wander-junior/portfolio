@@ -12,8 +12,8 @@ export default function Form() {
     const [email, setEmail] = React.useState('');
     const [message, setMessage] = React.useState('');
 
-    let isSent = false;
-    let isSucess = true;
+    const [isSent, setIsSent] = React.useState(false);
+    const [isSucess, setIsSucess] = React.useState(true);
 
     const handleChange = (e) => {
         if (e.target.name === 'name') setName (e.target.value);
@@ -37,10 +37,10 @@ export default function Form() {
             templetaParams,
             REACT_APP_USER_ID,
         ).then(() => {
-            isSent=true;
+            setIsSent(true);
         }, () => {
-            isSent=true;
-            isSucess=false;
+            setIsSent(true);
+            setIsSucess(false);
         }) 
 
     }
