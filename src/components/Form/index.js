@@ -14,6 +14,7 @@ export default function Form() {
 
     const [isSent, setIsSent] = React.useState(false);
     const [isSucess, setIsSucess] = React.useState(true);
+    const [buttonText, setButtonText] = React.useState('Enviar');
 
     const handleChange = (e) => {
         if (e.target.name === 'name') setName (e.target.value);
@@ -23,6 +24,8 @@ export default function Form() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        setButtonText('Enviando...');
 
         const templetaParams = {
             from_name: email,
@@ -74,7 +77,7 @@ export default function Form() {
                                 <InputTxtArea name="message" value={message} onChange={handleChange}/>
                             </label>
                             <Button 
-                                text="Enviar" 
+                                text={buttonText}
                                 mainColor={colors.primary} 
                                 secondaryColor={colors.tertiary}
                                 hoverColor={colors.secondary}
