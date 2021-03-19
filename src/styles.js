@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const colors = {
     primary: '#945FF5',
@@ -46,9 +46,22 @@ const Container = styled.div`
     padding-bottom: 60px;
 `;
 
+const renderAnimation = (midPause) => keyframes`
+    0%, ${midPause}% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0)
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+`
+
 export {
     colors,
     containerConfigs,
     typoSizes,
-    Container
+    Container,
+    renderAnimation
 };
