@@ -1,4 +1,4 @@
-import { colors, typoSizes } from '../../styles.js';
+import { colors, typoSizes, renderAnimation } from '../../styles.js';
 import styled from 'styled-components';
 
 const AbilitiesWrapper = styled.div`
@@ -8,6 +8,9 @@ const AbilitiesWrapper = styled.div`
 
 const Title = styled.h1`
     padding-top: 60px;
+    animation: ${renderAnimation(60)};
+    animation-duration: 1s;
+
     :after {
         background: ${props => props.expanded ? colors.quartenary : colors.tertiary};
     }
@@ -26,6 +29,8 @@ const AboutDescription = styled.p`
     font-size: ${typoSizes.small};
     padding-top: 60px;
     text-align: center;
+    animation: ${renderAnimation(40)};
+    animation-duration: 1s;
 `;
 
 export {AbilitiesWrapper, Title, List, AboutDescription};

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { typoSizes, colors } from '../../../styles';
+import { typoSizes, colors, renderAnimation } from '../../../styles';
 
 const ItemWrapper = styled.li`
     flex: 1 1 0;
@@ -25,6 +25,8 @@ const Description = styled.p`
     text-align: center;
     padding-top: 20px;
     min-width: 96px;
+    animation: ${renderAnimation(95)};
+    animation-duration: 1s;
 `;
 
 const Subtitle = styled.h2`
@@ -39,16 +41,22 @@ const Subtitle = styled.h2`
         background: ${props => props.expanded ? colors.quartenary : colors.tertiary};
         margin: 20px auto 0px auto;
     }
+    animation: ${renderAnimation(90)};
+    animation-duration: 1s;
 `;
 
 const Icon = styled.img`
     margin-top: 20px;
+    animation: ${renderAnimation(80)};
+    animation-duration: 1s;
 `;
 
 const AbilitiesListWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: ${renderAnimation(99)};
+    animation-duration: 1s;
     ::before {
         content: '';
         display: block;
