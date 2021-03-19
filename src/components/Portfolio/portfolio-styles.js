@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../styles';
+import { colors, renderAnimation } from '../../styles';
 
 const PortfolioWrapper = styled.div`
     padding-top: 60px;
@@ -11,6 +11,8 @@ const PortfolioWrapper = styled.div`
 `;
 
 const ItemsWrapper = styled.ul`
+    animation: ${renderAnimation(60)};
+    animation-duration: 1s;
     display: grid;
     margin-bottom: ${props => props.isExpanded ? '0px' : '40px' };
     grid-template-columns: 1fr 1fr 1fr;
@@ -22,6 +24,8 @@ const ItemsWrapper = styled.ul`
 `;
 
 const PortfolioTitle = styled.h1`
+    animation: ${renderAnimation(40)};
+    animation-duration: 1s;
     ::after {
         background: ${colors.quartenary};
         margin-bottom: 40px;    
