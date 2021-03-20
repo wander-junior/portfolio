@@ -3,7 +3,8 @@ import { colors, containerConfigs, typoSizes } from '../../styles.js';
 
 const MenuWrapper = styled.nav`
     background: ${colors.primary};
-
+    z-index: 2;
+    
     @media (min-width: 501px) {
         min-width: 100%;
     }
