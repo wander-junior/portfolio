@@ -1,5 +1,6 @@
 {
- "name": "App",
+ "short_name": "Wander Cruz",
+ "name": "Wander Cruz - Desenvolvedor Web", 
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
@@ -37,5 +38,8 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ]
+ ],
+ "start_url": "https://www.wandercruz.com",
+ "theme_color": "#945FF5",
+ "background_color": "#FEFDFE"
 }
