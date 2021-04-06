@@ -33,7 +33,7 @@ export default function Abilities(isExpanded) {
                         name="Front End" 
                         icon={frontEndIcon} 
                         altIcon={altFrontEndIcon}
-                        description="Eu programo a interface gráfica de seu site"
+                        description="Programo a interface gráfica de seu site"
                         isExpanded={isExpanded}
                         abilitiesList={frontEndAbilities}
                     />
@@ -41,7 +41,7 @@ export default function Abilities(isExpanded) {
                         name="Back End" 
                         icon={backEndIcon} 
                         altIcon={altBackEndIcon}
-                        description="Eu implemento aplicações e o banco de dados do seu site"
+                        description="Implemento aplicações e o banco de dados do seu site"
                         isExpanded={isExpanded}
                         abilitiesList={backEndAbilities}
                     />    
@@ -49,7 +49,7 @@ export default function Abilities(isExpanded) {
                         name="UI/UX Design" 
                         icon={uiuxIcon} 
                         altIcon={altUiuxIcon}
-                        description="Eu crio interfaces intuitivas e bonitas para o seu site"
+                        description="Crio interfaces intuitivas e bonitas para o seu site"
                         isExpanded={isExpanded}
                         abilitiesList={uiUxAbilities}
                     />    
