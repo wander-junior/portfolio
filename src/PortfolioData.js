@@ -14,6 +14,13 @@ const projects = [
         github: 'https://github.com/wander-junior/FightFlix'
     },
     {
+        id: 7,
+        name: 'Letmeask',
+        text: 'Letmeask é um projeto desenvolvido durante NLW - Next Level Week #6 da RocketSeat. Se trata de uma plataforma para criar salas de perguntas e respostas para ser usada em lives. O Front End foi desenvolvido usando Reactjs com TypeScript e SASS. Para o backend foi utilizado Firebase. Além das features desenvolvidas durante as aulas da Rocket Seat, eu também desenvolvi novas features como: responsividade, dark theme, autenticação por facebook, notificações, modais, ordenação de perguntas e rota privada.',
+        link: 'https://letmeask-4db6a.web.app/',
+        github: 'https://github.com/wander-junior/letmeask'
+    },
+    {
         id: 3,
         name: 'Bikcraft',
         text: 'Projeto desenvolvido durante o curso "Web Design Completo" da Origamid, usando HTML5, CSS3 e JavaScript moderno.',
