@@ -21,7 +21,6 @@ export default function Contato() {
                         <Form />
                         <Info>
                             <InfoSubtitle>DADOS</InfoSubtitle>
-                            <InfoItem>+55 (31) 98888-4231</InfoItem>
                             <InfoItem>wanderjrcruz96@gmail.com</InfoItem>
                         </Info>
                     </ContatoWrapper>

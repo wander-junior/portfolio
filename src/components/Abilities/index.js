@@ -16,7 +16,7 @@ import Button from '../Button';
 
 export default function Abilities(isExpanded) {
 
-    const frontEndAbilities = ['HTML5/CSS3', 'SASS', 'React'];
+    const frontEndAbilities = ['HTML5/CSS3', 'SASS', 'React', 'TypeScript'];
     const backEndAbilities = ['Node.js', 'MongoDB', 'Heroku', 'Wordpress'];
     const uiUxAbilities = ['Figma', 'Adobe XD'];
 
@@ -24,7 +24,7 @@ export default function Abilities(isExpanded) {
         <AbilitiesWrapper expanded={isExpanded.isExpanded}>
             <Container>
                 { isExpanded.isExpanded ?
-                    <AboutDescription>Sou natural de Conselheiro Lafaiete, Minas Gerais e atualmente estudo Ciência da Computação na Universidade Federal de Ouro Preto. Sou apaixonado por tecnologia e vou ajudar você a construir sua presença online com as ferramentas mais atualizadas do mercado.</AboutDescription>
+                    <AboutDescription>Sou natural de Conselheiro Lafaiete, Minas Gerais e atualmente atuo como desenvolvedor freelancer. Sou apaixonado por tecnologia e vou ajudar você a construir sua presença online com as ferramentas mais atualizadas do mercado.</AboutDescription>
                 : null
                 }
                 <Title expanded={isExpanded.isExpanded}>Serviços</Title>
